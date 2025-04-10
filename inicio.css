@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-image: url(file:///C:/Users/PC/Pictures/imagenes/182428240217.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.contenido-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px; 
+}
+
+
+.login-container {
+    background: rgb(15, 39, 66);
+    color: white;
+    opacity: .9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #0a54b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #1678b9;
+}
+
+
+.Registrar {
+    margin-top: 20px;
+}
+
+.invitado {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+
+.logo .imagen {
+    width: 200px;
+    height: auto;
+}
+
+
+.logo-banner {
+    width: 500px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 47px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+
+.nav-links a.activo::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .logo-banner {
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .logo .imagen {
+        width: 150px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo-banner {
+        width: 180px;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .logo .imagen {
+        width: 120px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .contenido-principal {
+        margin-top: 120px;
+    }
+
+    .login-container {
+        width: 90%;
+    }
+}
+

@@ -1,0 +1,508 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(file:///C:/Users/PC/Pictures/imagenes/182428240217.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: -40px 20px;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: yellow;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+ 
+  .nav-links a:hover::after,
+  .nav-links a.activo::after {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+
+
+.logo-img {
+    width: 100px;
+}
+.imagen{
+    width: 40%;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: yellow;
+}
+
+.left-aligned {
+    margin-left: 100%;
+    text-align: left;
+    max-width: 500px;
+    margin: 10% auto;
+    line-height: 1.9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 3px;
+
+    
+}
+.imagen-transparente {
+    width: 500px;
+    mix-blend-mode: screen;
+    filter: drop-shadow(0px 0px 10px rgba(102, 0, 0, 0.8));
+    margin-left: -5%;
+    margin-top: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -150%);
+
+}
+
+.left-aligned {
+    margin-left: 3%;
+    text-align: left;
+    margin-top: 12%;
+    color: rgb(255, 255, 255);
+}
+
+.logo-img {
+    width: 100px; 
+    height: auto;
+    margin-top: -15%;
+}
+h1{
+    color: yellow;
+    width: -10%;
+    filter: drop-shadow(0px 0px 10px rgba(255, 197, 5, 0.8));
+}
+h2{
+   
+    color: rgb(255, 255, 255);
+    margin-right: 100px;
+    position: absolute;
+    top: 350px;    
+    left: 750px;  
+    filter: drop-shadow(10px 0px 10px rgba(255, 59, 59, 0.8));
+}
+
+.title-outside {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px; 
+}
+
+
+.transparent-box {
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    width: 600px;  
+    height: 300px; 
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+
+.hover-image, .hover-video {
+    width: 100%;  
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.hover-video {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    opacity: 0;
+}
+
+
+.transparent-box:hover .hover-image {
+    opacity: 0;
+}
+
+.transparent-box:hover .hover-video {
+    opacity: 1;
+    width: 100%;
+}
+
+
+
+.logo-banner {
+    display: block;
+    margin: 0 auto; 
+    width: 50%; 
+    max-width: 500px; 
+    background: none; 
+    mix-blend-mode: screen; 
+    margin-top: 40px;
+}
+
+.features-container img {
+    max-width: 100px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    height: 190px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+ .feature-item {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 8px; 
+}
+
+.feature p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #005066;
+}
+
+.Texto {
+    border: 2px solid #000;  
+    padding: 10px;         
+    background-color: #001431; 
+    border-radius: 10px;    
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); 
+    margin-top: 90px;       
+    max-width: 500px;
+    max-height: 80%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+.catalogo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px; 
+        justify-content: center;
+        max-width: 2000px; 
+        margin: 90px 20px; 
+        
+        
+    
+}
+
+
+
+.card {
+    position: relative;
+    width: 100%; 
+    height: 300px; 
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px yellow;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: yellow;
+    text-shadow: 0px 0px 10px rgba(255, 217, 0, 0.8);
+}
+
+
+.media-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.hover-image, .hover-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.hover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.card:hover .hover-image {
+    opacity: 0;
+}
+
+.card:hover .hover-video {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+h3{
+    color: yellow;
+    filter: drop-shadow(0px 0px 10px rgba(255, 217, 0, 0.8));
+}
+
+
+.Texto {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px yellow;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: yellow;
+    text-shadow: 0px 0px 10px rgba(255, 217, 0, 0.8);
+}
+
+.hover-image {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hover-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.card:hover .hover-image {
+    opacity: 0;
+}
+
+.card:hover .hover-video {
+    opacity: 1;
+    pointer-events: auto;
+}
+.card-combos {
+    margin-top: 100px;
+    margin-left: 30%;
+}
+.title-overlay {
+    position: absolute;
+    top: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: yellow;
+    font-size: 22px; 
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgb(255, 174, 0);
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px 15px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: yellow;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scaleX(0);
+}
+
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+.nav-links a.activo::after {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .transparent-box {
+        width: 90%;
+        height: auto;
+    }
+
+    .imagen-transparente {
+        display: none;
+    }
+
+    .left-aligned {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .features-container {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-banner {
+        width: 80%;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-links a {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+}

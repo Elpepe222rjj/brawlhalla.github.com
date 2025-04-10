@@ -1,0 +1,130 @@
+body{
+background-image: url(file:///C:/Users/PC/Pictures/imagenes/182428240217.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center;
+
+
+}
+
+
+.Registrar{
+    padding: 5px 10px;
+    text-align: center;
+}
+.invitado{
+    padding: 5px 10px;
+    color: white;
+}
+.login-container {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    background-color: rgb(108, 157, 212);
+    opacity: 90%;
+    justify-content: center;
+    position: relative;
+    margin-left: 55vh;
+    
+    
+
+
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
+
+    
+}
+.login-container input {
+    width: 90%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #05b823;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+}
+.login-container button:hover {
+    background: #1678b9;
+    padding: 10px;
+    text-align: center;
+}
+.Seción{
+    color: white;
+    padding: 60px;
+    left: 20px;
+}
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .logo-banner {
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .logo .imagen {
+        width: 150px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo-banner {
+        width: 180px;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .logo .imagen {
+        width: 120px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .contenido-principal {
+        margin-top: 120px;
+    }
+
+    .login-container {
+        width: 90%;
+    }
+}
