@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawlhalla</title>
+    <link rel="stylesheet" href="New.css">
+</head>
+<body>
+    <header>
+        <header class="navbar">
+            <div class="logo">
+                <img src="Imagenes/Logo de brawlhalla.webp" 
+                alt="Brawlhalla Logo" class="imagen">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="activo">Hogar</a></li>
+                    <li><a href="basico.html">Básico</a></li>
+                    <li><a href="file:///C:/Users/PC/Downloads/Reponsive%20web%20desing%20-%20eexposicion/MI%20PAGINA/Regis.html">
+                        <Ri:a>Registrarse</Ri:a></a></li>
+                    <li><a href="file:///C:/Users/PC/Downloads/Reponsive%20web%20desing%20-%20eexposicion/MI%20PAGINA/inicio.html">
+                        Inicia sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+            <img src="Imagenes/sol Brawl.png" 
+            class="logo-banner" alt="Brawlhalla Logo">
+        </div>
+    </div>
+    </header>
+    <div class="content left-aligned">
+        <h1>Bienvenido a Brawlhalla</h1>
+        <br>
+        <p>Brawlhalla es un videojuego de lucha en 2D de plataformas, desarrollado por Blue Mammoth Games y publicado por Ubisoft.
+             Es un juego free-to-play (gratuito) con mecánicas similares a Super Smash Bros., donde los jugadores deben lanzar a sus oponentes
+              fuera del escenario para ganar.Brawlhalla es un juego de lucha de plataformas 2D gratuito
+               que admite hasta 8 jugadores locales o en línea con juego
+             cruzado completo para PC, PS5, PS4, Xbox Series X|S, Xbox One, Nintendo Switch, iOS y Android. Los guerreros más grandes
+              de la historia se enfrentan para demostrar quién es el mejor en una prueba épica de fuerza y ​​habilidad.</p>
+    </div>
+    <img 
+        src="Imagenes/arcaria.png" 
+        class="imagen-transparente">
+        
+        <div class="transparent-box">
+            <img src="Imagenes/img del vid.jpg" alt="Brawlhalla" class="hover-image">
+            <video src="Trailer brawlhalla.mp4"  class="hover-video" muted loop playsinline autoplay></video>
+        </div>
+        </div>
+        <div class="catalogo">
+        <div class="Texto">
+
+            <h3>Brawhalla</h3>
+
+            <p>Brawlhalla es un videojuego de lucha en 2D de plataformas, desarrollado por Blue Mammoth Games y publicado por Ubisoft.
+                 Es un juego free-to-play (gratuito) con mecánicas similares a Super Smash Bros., donde los jugadores deben lanzar a sus oponentes
+                  fuera del escenario para ganar.Brawlhalla es un juego de lucha de plataformas 2D gratuito
+                   que admite hasta 8 jugadores locales o en línea con juego
+                 cruzado completo para PC, PS5, PS4, Xbox Series X|S, Xbox One, Nintendo Switch, iOS y Android.</p>
+        </div>
+                 
+        
+        <div class="Texto">
+            <h3>Playstation vida en brawlhalla</h3>
+
+                 <p>Brawlhalla es un videojuego de lucha en 2D de plataformas, desarrollado por Blue Mammoth Games y publicado por Ubisoft.
+                      Es un juego free-to-play (gratuito) con mecánicas similares a Super Smash Bros., donde los jugadores deben lanzar a sus oponentes
+                       fuera del escenario para ganar.Brawlhalla es un juego de lucha de plataformas 2D gratuito
+                        que admite hasta 8 jugadores locales o en línea con juego
+                      cruzado completo para PC, PS5, PS4, Xbox Series X|S, Xbox One, Nintendo Switch, iOS y Android.</p>
+
+                    </div>
+                    <div class="card card-combos">
+                        <div class="title-overlay">COMBOS</div>
+                        <div class="media-container">
+                            <img src="Imagenes/img mordex.jpg"
+                             class="hover-image">
+                            <video class="hover-video" muted loop playsinline autoplay>
+                                <source src="Combos.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+        </div>
+    </div>
+        <div class="features-container">
+
+            <div class="feature">
+                <a href="https://store.steampowered.com/app/291550/Brawlhalla/" target="_blank">
+                <img src="Imagenes/Logo steam.png" type="button"alt="Blue mamoot" >
+                <p>Steam</p>
+            </a>
+            </div>
+            <div class="feature">
+                <img src="Imagenes/logo espada.png" alt="Libre para jugar">
+                <p>Libre para jugar</p>
+            </div>
+            <div class="feature">
+                <img src="Imagenes/Logo consolas.png" alt="Juego cruzado">
+                <p>Juego cruzado</p>
+            </div>
+            <div class="feature">
+                <img src="Imagenes/logo Jugadores.png" alt="Hasta 8 jugadores">
+                <p>Hasta 8 jugadores</p>
+            </div>
+            <div class="feature">
+                <img src="Imagenes/Logo casco.png" alt="Más de 50 leyendas">
+                <p>Más de 50 leyendas jugables</p>
+       
+            </div>
+        </div>
+        <script>
+            
+            document.querySelectorAll('.media-container').forEach(container => {
+                const video = container.querySelector('video');
+                container.addEventListener('mouseenter', () => {
+                    video.play();
+                });
+                container.addEventListener('mouseleave', () => {
+                    video.pause();
+                    video.currentTime = 0; 
+                });
+            });
+        </script>
+
+</body>
+</html>
